@@ -1,0 +1,11 @@
+(* FAIL — §2.6 Function Invocation
+ * each actual-argument type must match the declared formal type.
+ * Boolean passed where integer is required keeps us in §1.1 subset. *)
+program ArgType;
+function id(n : integer) : integer;
+begin
+    return n;
+end id;
+begin
+    writeln id(true);           (* boolean given where integer is expected *)
+end ArgType.

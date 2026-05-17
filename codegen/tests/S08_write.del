@@ -1,0 +1,14 @@
+(* §2.3.2 Statements — WRITE / WRITELN
+ * each call wraps the operand with
+ *   getstatic java.io.PrintStream java.lang.System.out
+ *   <eval expr>
+ *   invokevirtual void java.io.PrintStream.print[ln](<type>) *)
+program S08_write;
+var x : integer = 42;
+begin
+    write "answer = ";
+    writeln x;
+    write x;
+    writeln " is the answer";
+    writeln true;
+end S08_write.

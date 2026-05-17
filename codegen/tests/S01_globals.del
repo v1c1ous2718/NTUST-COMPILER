@@ -1,0 +1,17 @@
+(* §2.1 Global Variables
+ * field static <type> <name> [= <const_value>]
+ * exercises the in-scope scalar types (integer, boolean) with and
+ * without an initializer. Spec §1.1 bans real and string variables. *)
+program S01_globals;
+var a : integer;
+var b : integer;
+var c : integer = 10;
+var flag : boolean = true;
+begin
+    a := 1;
+    b := 2;
+    writeln a;
+    writeln b;
+    writeln c;
+    writeln flag;
+end S01_globals.

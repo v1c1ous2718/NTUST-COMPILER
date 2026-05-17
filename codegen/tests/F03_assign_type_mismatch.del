@@ -1,0 +1,8 @@
+(* FAIL — §2.3.2 Assignments
+ * the spec requires the LHS and RHS of an assignment to have the same type.
+ * Boolean RHS keeps us inside the §1.1 subset. *)
+program TypeMismatch;
+var n : integer;
+begin
+    n := true;          (* boolean into integer *)
+end TypeMismatch.

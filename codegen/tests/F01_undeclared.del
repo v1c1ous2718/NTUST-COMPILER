@@ -1,0 +1,8 @@
+(* FAIL — §2.3.1 Expressions / Variables
+ * referencing an identifier that was never declared. *)
+program Undeclared;
+var x : integer;
+begin
+    x := y + 1;     (* `y` is undeclared *)
+    writeln x;
+end Undeclared.

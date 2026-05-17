@@ -1,0 +1,8 @@
+(* FAIL — §2.2.2 Storing Constants in Symbol Table
+ * a constant has no storage, so it cannot be the target of an assignment.
+ * Integer constant keeps us inside the §1.1 subset (no floats). *)
+program AssignConst;
+const N = 100;
+begin
+    N := 200;           (* cannot assign to const *)
+end AssignConst.

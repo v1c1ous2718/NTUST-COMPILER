@@ -1,0 +1,22 @@
+(* §2.6 Procedure Declaration
+ * procedures map to `void` static methods and use a plain `return`.
+ * Spec §1.1 bans string variables, so the procedures here take only
+ * integers; string literals are emitted directly via WRITE. *)
+program S13_proc;
+procedure greet;
+begin
+    write "Hello, ";
+    writeln "World!";
+end greet;
+
+procedure printPair(a : integer, b : integer);
+begin
+    write a;
+    write " ";
+    writeln b;
+end printPair;
+
+begin
+    greet;
+    printPair(1, 2);
+end S13_proc.

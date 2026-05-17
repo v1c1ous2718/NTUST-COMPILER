@@ -1,0 +1,11 @@
+(* FAIL — §2.6 Function Declaration
+ * the type of `return expr` must match the function's declared return type.
+ * Boolean returned from an integer function keeps us in the §1.1 subset. *)
+program ReturnType;
+function f : integer;
+begin
+    return true;                (* function returns integer *)
+end f;
+begin
+    writeln f;
+end ReturnType.

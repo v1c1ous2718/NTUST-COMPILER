@@ -1,0 +1,16 @@
+(* §2.3.2 Statements — Assignment
+ * id := expr; lowers to (eval expr) + Xstore <slot> for locals
+ * or putstatic <type> <class>.<id> for globals. *)
+program S07_assign;
+var g : integer;
+function f(p : integer) : integer;
+var local : integer;
+begin
+    local := p + 1;
+    return local;
+end f;
+begin
+    g := 10;
+    g := g + f(g);
+    writeln g;
+end S07_assign.

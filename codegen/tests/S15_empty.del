@@ -1,0 +1,6 @@
+(* §2 Code Generation — minimal program
+ * smoke test: a program with no declarations and an empty body should
+ * still produce a valid class with an empty `main`. *)
+program S15_empty;
+begin
+end S15_empty.

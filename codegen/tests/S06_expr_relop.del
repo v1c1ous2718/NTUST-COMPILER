@@ -1,0 +1,13 @@
+(* §2.3.1 Expressions — Relational
+ * < <= = <> >= > each become isub + ifcond + 0/1 materialization. *)
+program S06_expr_relop;
+var a : integer = 5;
+var b : integer = 10;
+begin
+    writeln a < b;
+    writeln a <= b;
+    writeln a = b;
+    writeln a <> b;
+    writeln a >= b;
+    writeln a > b;
+end S06_expr_relop.

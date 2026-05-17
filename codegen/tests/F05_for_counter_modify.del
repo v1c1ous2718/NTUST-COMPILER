@@ -1,0 +1,10 @@
+(* FAIL — §2.5 Loops / for
+ * the iteration counter cannot be modified inside the loop body. *)
+program ForCounter;
+var i : integer;
+begin
+    for i := 1 to 10 do
+    begin
+        i := i + 5;     (* counter modified inside loop body *)
+    end;
+end ForCounter.

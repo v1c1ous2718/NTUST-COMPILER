@@ -1,0 +1,11 @@
+(* §2.3.1 Expressions — Boolean
+ * and / or / not lower to iand / ior / (iconst_1 ixor). *)
+program S05_expr_bool;
+var p : boolean = true;
+var q : boolean = false;
+begin
+    writeln p and q;
+    writeln p or q;
+    writeln not p;
+    writeln (p or q) and not (p and q);
+end S05_expr_bool.

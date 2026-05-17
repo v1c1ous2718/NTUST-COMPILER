@@ -1,0 +1,17 @@
+(* §2.5 Loops — for / downto
+ * spec equivalence: `for i := lo to hi do S` ≡ while-loop with i := lo,
+ * cond i <= hi, body S, increment i := i + 1.
+ * downto increments by -1. *)
+program S11_for;
+var i : integer;
+var s : integer = 0;
+begin
+    for i := 1 to 5 do
+    begin
+        s := s + i;
+    end;
+    writeln s;
+
+    for i := 10 downto 1 do
+        writeln i;
+end S11_for.

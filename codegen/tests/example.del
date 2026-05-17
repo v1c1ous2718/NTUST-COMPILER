@@ -1,0 +1,21 @@
+(* §3 Example — full integration
+ * the worked example from the spec: a const, a global var, a function
+ * with two int parameters, and an if/else over a relational comparison. *)
+program example;
+
+const a = 5;
+var c : integer;
+
+function add(b1 : integer, b2 : integer) : integer;
+begin
+    return b1 + b2;
+end add;
+
+begin
+    c := add(a, 10);
+    if (c > 10) then
+        writeln -c;
+    else
+        writeln c;
+    writeln "Hello World";
+end example.

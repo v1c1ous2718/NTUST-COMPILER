@@ -1,0 +1,14 @@
+(* §2.3.1 Expressions — Arithmetic
+ * + - * / mod and unary - map to iadd isub imul idiv irem ineg. *)
+program S04_expr_arith;
+var a : integer = 10;
+var b : integer = 3;
+begin
+    writeln a + b;
+    writeln a - b;
+    writeln a * b;
+    writeln a / b;
+    writeln a mod b;
+    writeln -a;
+    writeln (a + b) * (a - b);
+end S04_expr_arith.

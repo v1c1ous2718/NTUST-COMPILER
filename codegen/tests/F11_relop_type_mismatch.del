@@ -1,0 +1,10 @@
+(* FAIL — §2.3.1 Expressions / Relational
+ * a relational comparison requires its two operands to share a type.
+ * Boolean operand keeps the test inside the §1.1 subset. *)
+program RelopType;
+var n : integer = 1;
+var b : boolean = true;
+begin
+    if (n < b) then              (* integer compared with boolean *)
+        writeln "weird";
+end RelopType.

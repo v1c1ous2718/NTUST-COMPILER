@@ -1,0 +1,28 @@
+(* §2.6 Function Declaration and Invocation
+ * mixes a function with locals + repeat-until, a parameterless
+ * procedure, and writeln of a function-call expression. *)
+program S16_funcs;
+
+function fact(n : integer) : integer;
+var acc : integer = 1;
+var i : integer;
+begin
+    i := 1;
+    repeat
+        acc := acc * i;
+        i := i + 1;
+    until i > n;
+    return acc;
+end fact;
+
+procedure greet;
+begin
+    write "Hello, ";
+    writeln "world";
+end greet;
+
+begin
+    writeln fact(5);
+    writeln fact(7);
+    greet;
+end S16_funcs.

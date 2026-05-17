@@ -1,0 +1,11 @@
+(* FAIL — §2.6 Procedure
+ * a procedure has no return value and may not appear in an expression. *)
+program ProcInExpr;
+var x : integer;
+procedure noop;
+begin
+    writeln "ran";
+end noop;
+begin
+    x := noop + 1;              (* procedure used as expression *)
+end ProcInExpr.

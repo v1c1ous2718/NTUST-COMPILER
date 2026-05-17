@@ -1,0 +1,15 @@
+(* §2.2.2 Storing Constants in Symbol Table
+ * a const must NOT become a field; its value lives in the symbol table
+ * and is materialized as iconst/sipush/ldc at every use site.
+ * Spec §1.1 bans floats, so only int / bool / string-literal-for-WRITE. *)
+program S03_constants;
+const Max = 100;
+const Greeting = "Hello";
+const Flag = true;
+var x : integer;
+begin
+    x := Max + 1;
+    writeln x;
+    writeln Greeting;
+    writeln Flag;
+end S03_constants.

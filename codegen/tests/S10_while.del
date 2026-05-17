@@ -1,0 +1,14 @@
+(* §2.5 Loops — while
+ * Lbegin: <cond>; ifeq Lexit; <body>; goto Lbegin; Lexit: *)
+program S10_while;
+var i : integer;
+var sum : integer = 0;
+begin
+    i := 1;
+    while (i <= 10) do
+    begin
+        sum := sum + i;
+        i := i + 1;
+    end;
+    writeln sum;
+end S10_while.

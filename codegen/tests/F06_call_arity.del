@@ -1,0 +1,10 @@
+(* FAIL — §2.6 Function Invocation
+ * argument count must match the declared formal-parameter count. *)
+program Arity;
+function add(a : integer, b : integer) : integer;
+begin
+    return a + b;
+end add;
+begin
+    writeln add(1);             (* expects 2 args, got 1 *)
+end Arity.

@@ -1,0 +1,15 @@
+(* §2.2 Local Variables
+ * locals are numbered (slot 0..N-1 starts after formal params) and an
+ * initializer must produce a load + Xstore pair. *)
+program S02_locals;
+function compute(n : integer) : integer;
+var i : integer = 0;
+var j : integer;
+var k : integer = 100;
+begin
+    j := n * 2;
+    return i + j + k;
+end compute;
+begin
+    writeln compute(5);
+end S02_locals.

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./parser /tmp/block_decls.p)",
+      "Bash(./parser /tmp/block_decls2.p)",
+      "Bash(./parser /tmp/read_undecl.p)",
+      "Bash(./parser /tmp/multi_const_use.p)"
+    ]
+  }
+}

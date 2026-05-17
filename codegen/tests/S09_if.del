@@ -1,0 +1,22 @@
+(* §2.4 If Statements
+ * three flavors: if-only, if-else, if-else with begin/end blocks. *)
+program S09_if;
+var x : integer = 5;
+begin
+    if (x > 0) then
+        writeln "positive";
+
+    if (x = 0) then
+        writeln "zero";
+    else
+        writeln "nonzero";
+
+    if (x > 100) then
+    begin
+        writeln "big";
+    end;
+    else
+    begin
+        writeln "small";
+    end;
+end S09_if.
